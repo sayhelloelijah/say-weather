@@ -1,1 +1,29 @@
 // Header styles
+.weather {
+    display: flex;
+    margin: 0 auto;
+    max-width: 500px;
+    
+    @at-root &__header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @at-root &__temp {
+        font: {
+            size: 10em;
+            weight: 300;
+        }
+        position: relative;
+
+        &::after {
+            content: '°';
+            font-size: .5em;
+            position: absolute;
+            top: 20px;
+            right: -15px;
+        }
+    }
+}
