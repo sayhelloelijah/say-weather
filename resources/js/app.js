@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        xhr.open('GET', `http://api.openweathermap.org/data/2.5/forecast?APPID=c3e37aa6de2fdb167dcd812b6d902e80&lat=${lat}&lon=${lng}&units=imperial&cnt=1`, false);
+        xhr.open('GET', `https://api.openweathermap.org/data/2.5/forecast?APPID=c3e37aa6de2fdb167dcd812b6d902e80&lat=${lat}&lon=${lng}&units=imperial&cnt=1`, false);
         xhr.send();
     }
 
